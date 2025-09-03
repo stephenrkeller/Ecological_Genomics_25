@@ -1,3 +1,6 @@
+# large files in mydata/ dir
+population_genomics/mydata/
+
 # History files
 .Rhistory
 .Rapp.history
