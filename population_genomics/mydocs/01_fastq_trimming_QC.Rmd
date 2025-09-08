@@ -1,0 +1,27 @@
+---
+title: "01 fastq trimming and QC"
+author: "SR Keller"
+date: "2025-09-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{bash}
+
+cd ~/courses/
+
+ls -l
+
+
+```
+
+
+```{bash, eval=F}
+
+bash fastp.sh
+
+```
+

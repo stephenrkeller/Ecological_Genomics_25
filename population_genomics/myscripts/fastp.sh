@@ -6,11 +6,12 @@
 
 # Next, let's load our required modules:
 
+module purge
 module load gcc fastp
 
 # Define the path to the population_genomics folder in your Github repo.
 
-MYREPO="~/projects/eco_genomics2025/population_genomics"
+MYREPO="/users/s/r/srkeller/courses/Ecological_Genomics_25"
 
 # cd to the location (path) where data for the Population Genomics module live:
 
@@ -52,8 +53,8 @@ fastp -i ${READ1} -I ${READ2} -o ../../cleanreads/${NAME1} -O ../../cleanreads/$
 --cut_window_size 6 \
 --qualified_quality_phred 20 \
 --length_required 35 \
---html ~/${MYREPO}/myresults/fastp_reports/${NAME1}.html \
---json ~/${MYREPO}/myresults/fastp_reports/${NAME1}.json 
+--html ${MYREPO}/population_genomics/myresults/fastp_reports/${NAME1}.html \
+--json ${MYREPO}/population_genomics/myresults/fastp_reports/${NAME1}.json 
 
 done
 
