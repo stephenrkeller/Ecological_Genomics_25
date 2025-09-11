@@ -11,16 +11,20 @@ module load gcc fastp
 
 # Define the path to the population_genomics folder in your Github repo.
 
-MYREPO="/users/s/r/srkeller/courses/Ecological_Genomics_25"
+MYREPO="/users/s/r/srkeller/courses/Ecological_Genomics_25/population_genomics"
+
+# make a new directory within myresults/ to hold the fastp QC reports
+
+mkdir ${MYREPO}/myresults/fastp_reports
 
 # cd to the location (path) where data for the Population Genomics module live:
 
-cd /gpfs1/cl/ecogen/data/pbio6800/PopulationGenomics/fastq/red_spruce
+cd /gpfs1/cl/ecogen/pbio6800/PopulationGenomics/fastq/red_spruce
 
 # Define the population code to anlayze
 # Be sure to replace with your 4-digit pop code
 
-MYPOP="2505_9_C" 
+MYPOP="2505" 
 
 # for each file that has "MYPOP" and "R1" (read 1) in the name 
 # start a loop with this file as the input:
@@ -46,15 +50,14 @@ echo $NAME1 $NAME2
 # call fastp
 fastp -i ${READ1} -I ${READ2} -o ../../cleanreads/${NAME1} -O ../../cleanreads/${NAME2} \
 --detect_adapter_for_pe \
---trim_front1 5 \
---trim_poly_g \
+--trim_front1 12 \
 --thread 4 \
 --cut_right \
 --cut_window_size 6 \
 --qualified_quality_phred 20 \
 --length_required 35 \
---html ${MYREPO}/population_genomics/myresults/fastp_reports/${NAME1}.html \
---json ${MYREPO}/population_genomics/myresults/fastp_reports/${NAME1}.json 
+--html ${MYREPO}/myresults/fastp_reports/${NAME1}.html \
+--json ${MYREPO}/myresults/fastp_reports/${NAME1}.json 
 
 done
 
