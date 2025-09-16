@@ -1,0 +1,2 @@
+SampleID Num_reads Num_R1 Num_R2 Num_Paired Num_MateMapped Num_Singletons Num_MateMappedDiffChr Coverage_depth
+	-O,	Specify	0

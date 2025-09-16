@@ -17,6 +17,7 @@
 # Specify when Slurm should send you e-mail.  You may choose from
 # BEGIN, END, FAIL to receive mail, or NONE to skip mail entirely.
 #SBATCH --mail-type=NONE
+#SBATCH --mail-user=netid@uvm.edu
 
 # Run on a single node with four cpus/cores and 8 GB memory
 #SBATCH --nodes=1
@@ -33,9 +34,6 @@
 
 module purge
 
-# List here any modules you need to run your programs
-
-module load XXXX
 
 # Below here, give you bash script with your list of commands
 

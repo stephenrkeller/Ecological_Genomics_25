@@ -1,0 +1,8 @@
+SampleID Num_reads Num_R1 Num_R2 Num_Paired Num_MateMapped Num_Singletons Num_MateMappedDiffChr Coverage_depth
+2505	3031981	1514547	1517434	1992074	2791786	57987	776824	2.7004
+2505		2.7004
+/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams/2505_36_O		2.7004
+/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams/2505_36_O		2.7004
+/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams/2505_36_O		2.7004
+/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams/2505_36_O		
+/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams/2505_36_O		

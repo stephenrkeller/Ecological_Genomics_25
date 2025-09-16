@@ -11,7 +11,7 @@ module load gcc fastp
 
 # Define the path to the population_genomics folder in your Github repo.
 
-MYREPO="/users/s/r/srkeller/courses/Ecological_Genomics_25/population_genomics"
+MYREPO="/users/X/X/XXXX/"
 
 # make a new directory within myresults/ to hold the fastp QC reports
 
@@ -24,7 +24,7 @@ cd /gpfs1/cl/ecogen/pbio6800/PopulationGenomics/fastq/red_spruce
 # Define the population code to anlayze
 # Be sure to replace with your 4-digit pop code
 
-MYPOP="2505" 
+MYPOP="XXXX" 
 
 # for each file that has "MYPOP" and "R1" (read 1) in the name 
 # start a loop with this file as the input:
