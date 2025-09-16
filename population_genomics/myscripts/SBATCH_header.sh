@@ -1,6 +1,4 @@
-# Paste the following header below the first line of your bash script 
-# (i.e., after the line: #!/bin/bash)
-
+#!/bin/bash
 
 
 #---------  Slurm preamble, defines the job with #SBATCH statements
@@ -8,8 +6,9 @@
 # Give your job a name that's meaningful to you, but keep it short
 #SBATCH --job-name=my_job
 
-# Name the output file: the first part of the name (%x) will be whatever you name your job 
-#SBATCH --output=%x_%j.out
+# Name the output file: Re-direct the log file to your home directory
+# The first part of the name (%x) will be whatever you name your job 
+#SBATCH --output=/users/X/X/XXXX/projects/eco_genomics_2025/population_genomics/mylogs/%x_%j.out
 
 # Which partition to use: options include short (<3 hrs), general (<48 hrs), or week
 #SBATCH --partition=general
@@ -17,7 +16,7 @@
 # Specify when Slurm should send you e-mail.  You may choose from
 # BEGIN, END, FAIL to receive mail, or NONE to skip mail entirely.
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=srkeller@uvm.edu
+#SBATCH --mail-user=netid@uvm.edu
 
 # Run on a single node with four cpus/cores and 8 GB memory
 #SBATCH --nodes=1
@@ -29,10 +28,6 @@
 #SBATCH --time=24:00:00
 
 #---------  End Slurm preamble, job commands now follow
-
-# Remove all software modules and load all and only those needed
-
-module purge
 
 
 # Below here, give you bash script with your list of commands

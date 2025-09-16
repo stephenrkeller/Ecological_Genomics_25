@@ -1,24 +1,15 @@
 #!/bin/bash
 
-# If you plan to run on the cluster, paste your SBATCH head here and customize it
+### Add your comments/annotations here
 
-
-#---------  End Slurm preamble, job commands now follow
 
 # Remove all software modules and load all and only those needed
 
 module purge
 
-
-# Below here, give you bash script with your list of commands
-
-
-
 module load gcc sambamba 
 
 ### Processing the alignment files
-
-### Add your comments/annotations here
 
 INPUT="/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams"  # path where the *sam alignments live
 

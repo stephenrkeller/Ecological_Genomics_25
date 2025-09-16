@@ -1,11 +1,12 @@
 #!/bin/bash
 
-# Add SBATCH header
+### Add your comments/annotations here
 
 
-# Load modules
+# Remove all software modules and load all and only those needed
 
-#module load gcc bwa
+module purge
+
 module load bwa-mem2/2.2.1
 
 
@@ -21,7 +22,7 @@ REF="/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/ref_genome/Pmariana/Pmariana1.
 
 # Define a variable called MYPOP that will loop through all the samples for you pop
 
-MYPOP="2030_57_O"
+MYPOP="2030"
 
 # Define the input directory with your *cleaned* fastq files
 

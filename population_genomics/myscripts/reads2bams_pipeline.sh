@@ -8,10 +8,10 @@
 #---------  Slurm preamble, defines the job with #SBATCH statements
 
 # Give your job a name that's meaningful to you, but keep it short
-#SBATCH --job-name=my_job
+#SBATCH --job-name=reads2bams
 
 # Name the output file: the first part of the name (%x) will be whatever you name your job 
-#SBATCH --output=%x_%j.out
+#SBATCH --output=~/courses/Ecological_Genomcis_25/population_genomics/mylogs/%x_%j.out
 
 # Which partition to use: options include short (<3 hrs), general (<48 hrs), or week
 #SBATCH --partition=general
@@ -31,10 +31,6 @@
 #SBATCH --time=24:00:00
 
 #---------  End Slurm preamble, job commands now follow
-
-# Remove all software modules and load all and only those needed
-
-module purge
 
 # Below here, give you bash script with your list of commands
 
