@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Paste the following header below the first line of your bash script 
 # (i.e., after the line: #!/bin/bash)
 
@@ -22,8 +24,8 @@
 # Run on a single node with four cpus/cores and 8 GB memory
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=16G
+#SBATCH --cpus-per-task=10
+#SBATCH --mem=64G
 
 # Time limit is expressed as days-hrs:min:sec; this is for 24 hours.
 #SBATCH --time=24:00:00
@@ -34,8 +36,13 @@
 
 module purge
 
-
 # Below here, give you bash script with your list of commands
+
+bash mapping.sh
+
+bash process_bam.sh
+
+bash bam_stats.sh
 
 
 

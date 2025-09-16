@@ -9,19 +9,17 @@ module load gcc samtools
 # Add your comments/annotations here.
 
 
-
-
 # Path to the population_genomics folder in your repo:
 
-REPO=
+REPO="/users/s/r/srkeller/courses/Ecological_Genomics_25/population_genomics"
 
 # Directory where the mapping alignment files live:
 
-INPUT=
+INPUT="/gpfs1/cl/ecogen/pbio6800/PopulationGenomics/bams"
 
 # Your pop:
 
-MYPOP=
+MYPOP="2030_57_O"
 
 # For each section below, I've given you a placeholder ("XXXX") 
 # You'll need to replace with the correct variable at each step in your loops
@@ -47,6 +45,7 @@ done >> ${REPO}/myresults/${MYPOP}.flagstats  # append the stats as a new line t
 
 
 ### Calculate mean sequencing depth of coverage
+
 
 for FILE2 in ${INPUT}/${MYPOP}*.sorted.rmdup.bam
 do

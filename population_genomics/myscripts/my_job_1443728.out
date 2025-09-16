@@ -1,0 +1,20 @@
+@ Aligning 2030_57_O...
+Looking to launch executable "/gpfs1/sw/rh9/pkgs/bwa-mem2/2.2.1/bwa-mem2.avx2", simd = .avx2
+Launching executable "/gpfs1/sw/rh9/pkgs/bwa-mem2/2.2.1/bwa-mem2.avx2"
+-----------------------------
+Executing in AVX2 mode!!
+-----------------------------
+* SA compression enabled with xfactor: 8
+WARNING: bwa-mem2 doesn't work well with long reads or contigs; please use minimap2 instead.
+[E::main_mem] unknown read type 'ILLUMINA'
+
+Important parameter settings: 
+	BATCH_SIZE: 512
+	MAX_SEQ_LEN_REF: 256
+	MAX_SEQ_LEN_QER: 128
+	MAX_SEQ_LEN8: 128
+	SEEDS_PER_READ: 500
+	SIMD_WIDTH8 X: 32
+	SIMD_WIDTH16 X: 16
+	AVG_SEEDS_PER_READ: 64
+bash: process_bams.sh: No such file or directory

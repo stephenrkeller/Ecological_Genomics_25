@@ -1,0 +1,9 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "bwa"
+   Try: "module spider bwa" to see how to load the module(s).
+
+
+
+@ Aligning 2030_1_F...
+mapping.sh: line 44: bwa: command not found
+bash: process_bams.sh: No such file or directory

@@ -1,0 +1,65 @@
+@ Aligning 2030_57_O...
+Looking to launch executable "/gpfs1/sw/rh9/pkgs/bwa-mem2/2.2.1/bwa-mem2.avx512bw", simd = .avx512bw
+Launching executable "/gpfs1/sw/rh9/pkgs/bwa-mem2/2.2.1/bwa-mem2.avx512bw"
+
+Please verify that both the operating system and the processor support Intel(R) X87, CMOV, MMX, FXSAVE, SSE, SSE2, SSE3, SSSE3, SSE4_1, SSE4_2, MOVBE, POPCNT, F16C, AVX, FMA, BMI, LZCNT, AVX2, AVX512DQ, AVX512F, ADX, AVX512CD, AVX512BW, AVX512VL and CLWB instructions.
+
+
+sambamba 1.0.1
+ by Artem Tarasov and Pjotr Prins (C) 2012-2023
+    LDC 1.32.0 / DMD v2.102.2 / LLVM14.0.6 / bootstrap LDC - the LLVM D compiler (1.32.0)
+
+
+sambamba 1.0.1
+ by Artem Tarasov and Pjotr Prins (C) 2012-2023
+    LDC 1.32.0 / DMD v2.102.2 / LLVM14.0.6 / bootstrap LDC - the LLVM D compiler (1.32.0)
+
+
+sambamba 1.0.1
+ by Artem Tarasov and Pjotr Prins (C) 2012-2023
+    LDC 1.32.0 / DMD v2.102.2 / LLVM14.0.6 / bootstrap LDC - the LLVM D compiler (1.32.0)
+
+finding positions of the duplicate reads in the file...
+  sorted 2603845 end pairs
+     and 122132 single ends (among them 0 unmatched pairs)
+  collecting indices of duplicate reads...   done in 306 ms
+  found 1847456 duplicates
+collected list of positions in 0 min 6 sec
+removing duplicates...
+collected list of positions in 0 min 11 sec
+
+sambamba 1.0.1
+ by Artem Tarasov and Pjotr Prins (C) 2012-2023
+    LDC 1.32.0 / DMD v2.102.2 / LLVM14.0.6 / bootstrap LDC - the LLVM D compiler (1.32.0)
+
+
+Usage: sambamba [command] [args...]
+
+  Available commands:
+
+    view        view contents and convert from one format
+                to another (SAM/BAM/JSON/UNPACK)
+    index       build index (BAI)
+    merge       merge files (BAM)
+    sort        sort file (BAM)
+    slice       slice file (BAM using BED)
+    markdup     mark or remove duplicates (BAM)
+    subsample   subsample (BAM)
+    flagstat    output statistics (BAM)
+    depth       output statistics (BAM)
+    validate    simple validator (BAM)
+
+  No longer recommended:
+
+    mpileup     parallel execution of samtools (BAM)
+
+To get help on a particular command, call it without args.
+
+Global options
+
+    -q          quiet mode (do not show banner)
+
+For bug reports and feature requests see
+
+       https://github.com/biod/
+
